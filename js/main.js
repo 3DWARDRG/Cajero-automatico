@@ -1,13 +1,6 @@
-let image= document.querySelector(".image-start");
+let image= document.querySelector("#image-logo");
 
 image.addEventListener("click", redirection);
-
-setTimeout("redirection()",5000);
-
-
-
-
-
 
 
 

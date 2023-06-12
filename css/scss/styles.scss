@@ -1,0 +1,26 @@
+$colormajor: #2471A3;
+
+
+
+
+$primary:$colormajor;
+$enable-rounded:false;
+
+
+
+
+
+
+
+
+
+#image {
+    margin: 0; 
+    background-image: url("../../images/background\ log\ in.png");
+}
+
+
+
+@import"../../bootstrap/scss/bootstrap.scss"
+
+
