@@ -1,24 +1,39 @@
 $colormajor: #2471A3;
 
-
+$fontsize:10rem;
 
 
 $primary:$colormajor;
 $enable-rounded:false;
+$h1-font-size:$fontsize;
 
+#prueba{
+    background-color: white;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+}
 
-
-
-
-
-
-
+#background-cuenta{
+    margin:0;
+    background-image: url("../../images/useraccountbackground\ \(1\).png");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 #image {
     margin: 0; 
     background-image: url("../../images/background\ log\ in.png");
 }
 
+#bg-userAccount{
+    margin:0;
+    background-image: url("../../images/useraccountbackground\ \(1\).png");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 @import"../../bootstrap/scss/bootstrap.scss"
