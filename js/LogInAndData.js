@@ -4,7 +4,7 @@
 const accounts = [
     { nombre: "Mali",password: 1234, saldo: 200 },
     { nombre: "Joss",password: 1000, saldo: 290 },
-    { nombre: "Jenny",password: 5678, saldo: 67 }
+    { nombre: "Jesua",password: 5678, saldo: 67 }
   ];
 
 
@@ -22,6 +22,10 @@ let dataLogIn=document.querySelector("#dataLogIn");
 dataLogIn.addEventListener("submit",validateData);
 
 
+//Convertir alerta a display:none
+
+document.querySelector("#alertIncorrect").style.display="none";
+
 
 
 // Funcion que consiste en validar las credenciales del usuario y subir su saldo a la memoria temporal del navegador para utilizarlo mas tarde.
@@ -33,29 +37,32 @@ function validateData(a){
 
     a.preventDefault();
 
-    let userInput=String(document.querySelector("#userId").value);
+    let userId=String(document.querySelector("#userId").value);
 
-    let passwordInput=parseInt(document.querySelector("#passwordOfUser").value);
+    let passwordOfUser=parseInt(document.querySelector("#passwordOfUser").value);
     
     let outBucle=false;
 
     for (let i of accounts){
-        if(i.nombre===userInput && i.password===passwordInput){
+
+        // Condicional: Valida si los datos introducidos son validos.
+
+        if(i.nombre===userId && i.password===passwordOfUser){
           
             outBucle=true;
             let selectUserBalance=i.saldo;
-            sessionStorage.setItem("BalanceUser",selectUserBalance);
+            sessionStorage.setItem("balanceUser",selectUserBalance);
             break;
         }
        
     }
 
     if(outBucle){
-        window.location="userAccount.html";
+        window.location="userTransaction.html";
         }
 
     else{
-        alert("El usuario o contraseña es incorrecto.");
+        document.querySelector("#alertIncorrect").style.display="flex";
     }
 }
 

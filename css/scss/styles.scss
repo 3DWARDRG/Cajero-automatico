@@ -7,6 +7,8 @@ $primary:$colormajor;
 $enable-rounded:false;
 $h1-font-size:$fontsize;
 
+// Etiqueta para darle forma a las cajas de cada seccion
+
 #boxAuthor{
     background-color: white;
     width: 25rem;
@@ -14,11 +16,15 @@ $h1-font-size:$fontsize;
     border-radius: 0.5rem;
 }
 
+// Contenedor para darle un tamaño a la imagen arriba del form del login
+
 #brandBank{
     height:8rem;
     width: 100%;
     object-fit: cover;
 }
+
+// Etiqueta para el fondo de las secciones del usuario(Saldo,Ingresa,Retirar)
 
 #backgroundAccount{
     margin:0;
@@ -28,12 +34,16 @@ $h1-font-size:$fontsize;
     background-repeat: no-repeat;
 }
 
+// Dar fondo al login
+
 #backgroundLogIn{
     margin: 0; 
     background-image: url("../../images/background\ log\ in.png");
 }
 
-#bg-userAccount{
+// Dar fondo al menu transaccional
+
+#backgroundUserAccount{
     margin:0;
     background-image: url("../../images/useraccountbackground\ \(1\).png");
     object-fit: cover;
@@ -41,6 +51,7 @@ $h1-font-size:$fontsize;
     background-repeat: no-repeat;
 }
 
+// Importar estilos de bootstrap y compilarlos a CSS
 
 @import"../../bootstrap/scss/bootstrap.scss"
 
