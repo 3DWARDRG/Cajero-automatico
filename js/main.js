@@ -1,4 +1,4 @@
-let image= document.querySelector("#image-logo");
+let image= document.querySelector("#logoBank");
 
 image.addEventListener("click", redirection);
 
@@ -6,5 +6,5 @@ image.addEventListener("click", redirection);
 
 
 function redirection(){
-    window.location="index2.html";
+    window.location="logInUsers.html";
 }

@@ -7,14 +7,20 @@ $primary:$colormajor;
 $enable-rounded:false;
 $h1-font-size:$fontsize;
 
-#prueba{
+#boxAuthor{
     background-color: white;
     width: 25rem;
-    height: 25rem;
+    height: 30rem;
     border-radius: 0.5rem;
 }
 
-#background-cuenta{
+#brandBank{
+    height:8rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+#backgroundAccount{
     margin:0;
     background-image: url("../../images/useraccountbackground\ \(1\).png");
     object-fit: cover;
@@ -22,7 +28,7 @@ $h1-font-size:$fontsize;
     background-repeat: no-repeat;
 }
 
-#image {
+#backgroundLogIn{
     margin: 0; 
     background-image: url("../../images/background\ log\ in.png");
 }

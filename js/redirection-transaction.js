@@ -19,3 +19,13 @@ addMoney.addEventListener("click",redirectionAddMoney);
 function redirectionAddMoney(){
     window.location="userDeposit.html";
 }
+
+// Redirecciona a el usuario para retirar un monto
+
+const substractMoney= document.querySelector("#substractMoney");
+
+substractMoney.addEventListener("click",redirectionSubstractMoney);
+
+function redirectionSubstractMoney(){
+    window.location="outMoney.html";
+}

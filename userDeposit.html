@@ -9,9 +9,9 @@
     <script defer src="./js/AddMoney.js"></script>
 </head>
 <body>
-    <div id="background-cuenta" class="min-vh-100 d-flex justify-content-center align-items-center">
+    <div id="backgroundAccount" class="min-vh-100 d-flex justify-content-center align-items-center">
         <div class="row">
-            <div id="prueba">
+            <div id="boxAuthor">
                 <div class="row">
                     <h2 class="text-center py-4 fw-bold m-0">Ingresar Monto</h2>
                 </div>
@@ -20,9 +20,21 @@
                     <h3 id="balanceUser" class="text-center fw-bold pt-1 m-0"></h3>
                     <div class="row justify-content-center">
                         <form id="enviarprueba" action="" class="d-flex flex-column align-items-center">
-                    <label for="exampleInputEmail1" class="form-label text-dark pt-3 text-center fw-bold text-uppercase">Valor a Ingresar</label>
-                    <input id="newMoney" type="number" min="0" class="form-control w-50 mx-5 mb-3 border border-black">
-                    <button id="updateBalance" type="submit" href="#" class="btn btn-primary w-50">Ingresar</button>
+                            <div id="alertSuccess" class="alert alert-success align-items-center p-2 my-2 fade-show " role="alert">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </symbol>
+                                </svg>
+                                <svg class="bi flex-shrink-0 me-2" width="20" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                                <div class="px-0">
+                                  Un ejemplo de alerta success con un icono
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                    <label for="exampleInputEmail1" class="form-label text-dark pt-2 text-center fw-bold text-uppercase">Valor a Ingresar</label>
+                    <input id="newMoney" type="number" min="0" class="form-control w-50 mx-5 mb-3 border border-black fw-bold text-center">
+                    <button id="updateBalance" type="submit" href="#" class="btn btn-primary w-50 mt-3">Ingresar</button>
                         <a id="returnPage" href="#" class="btn btn-primary w-50 mt-3">Regresar</a>
             </form>
         </div>

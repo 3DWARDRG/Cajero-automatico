@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA COLOMBIA-Log in</title>
+    <!-- Integracion de bootstrap de style.scss a CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Script de bootstrap para su correcto funcionamiento -->
+    <script defer src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- Script para funcionamiento de la pagina -->
+    <script defer src="./js/LogInAndData.js"></script>
+</head>
+<body>
+  <div  class="card bg-dark text-white h-100" id="backgroundLogIn">
+      <div class="w-100 vh-100 d-flex justify-content-center align-items-center ">
+        <div id="boxAuthor">
+        <form id="dataLogIn" class="bg-light d-flex flex-column align-items-center p-4 rounded" >
+            <img id="brandBank" src="./images/logo-log in.png" alt="log-in" >
+            <div class="mb-3 w-100">
+              <label for="userId" class="form-label text-dark mt-3">Usuario</label>
+              <input type="text" class="form-control" id="userId" aria-describedby="userID" required>
+              <div id="textHelp" class="form-text text-dark">Nunca compartiremos su informacion con nadie más.</div>
+            </div>
+            <div class="mb-3 w-100">
+              <label for="passwordOfUser" class="form-label text-dark">Contraseña</label>
+              <input type="password" class="form-control" id="passwordOfUser" required>
+            </div>
+            <!-- Deje el ID al button por si surge algun mantenimiento y/o personalizacion -->
+            <button id="infoSubmit" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,12 +1,19 @@
 @charset "UTF-8";
-#prueba {
+#boxAuthor {
   background-color: white;
   width: 25rem;
-  height: 25rem;
+  height: 30rem;
   border-radius: 0.5rem;
 }
 
-#background-cuenta {
+#brandBank {
+  height: 8rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#backgroundAccount {
   margin: 0;
   background-image: url("../../images/useraccountbackground (1).png");
   -o-object-fit: cover;
@@ -15,7 +22,7 @@
   background-repeat: no-repeat;
 }
 
-#image {
+#backgroundLogIn {
   margin: 0;
   background-image: url("../../images/background log in.png");
 }
