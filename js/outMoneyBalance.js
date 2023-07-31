@@ -71,5 +71,5 @@ const returnPage= document.querySelector("#returnPage");
 returnPage.addEventListener("click",returnUserTransaction);
 
 function returnUserTransaction(){
-    window.location="UserTransaction.html";
+    window.location="userTransaction.html";
 }
